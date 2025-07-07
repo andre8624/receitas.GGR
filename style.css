@@ -26,6 +26,7 @@ header {
         background-color: var(--header);
       
     }
+    
      footer{
        background-color: var(--header);
        position: fixed;
