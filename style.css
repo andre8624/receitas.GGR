@@ -3,17 +3,18 @@
     --header: #7c0406;
     --:#2a2e7d;;
     --detalhe: #4f6820;
-    --escrita: #000000;
+    --escrita1: #000000;
     --escrita2: #ffffff;
    }
 
 
 header {
-    background-color: var(--header);
-    display: flex;
-    align-items: center;
-    color: var(--escrita2);
-}
-body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--escrita2);
+        padding: 10px;
+        background-color: var(--header);
+      
+    }
 
-}
