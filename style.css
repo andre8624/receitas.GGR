@@ -26,7 +26,7 @@ header {
         background-color: var(--header);
       
     }
-    
+
      footer{
        background-color: var(--header);
        position: fixed;
@@ -34,4 +34,5 @@ header {
        color: var(--escrita2);
        width: 100%;
        text-align: center;
+       gap:5px;
    }
