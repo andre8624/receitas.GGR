@@ -34,5 +34,5 @@ header {
        color: var(--escrita2);
        width: 100%;
        text-align: center;
-       gap:5px;
+       padding:10px
    }
