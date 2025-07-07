@@ -6,7 +6,11 @@
     --escrita1: #000000;
     --escrita2: #ffffff;
    }
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--principal); 
+    align-items: center;
+}
 
 header {
         display: flex;
