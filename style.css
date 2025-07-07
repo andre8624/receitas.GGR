@@ -27,10 +27,10 @@ header {
       
     }
      footer{
-       background-color: var(--preto);
+       background-color: var(--header);
        position: fixed;
        bottom: 0;
-       color: var(--branco);
+       color: var(--escrita2);
        width: 100%;
        text-align: center;
    }
