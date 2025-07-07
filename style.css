@@ -8,10 +8,12 @@
    }
 
 
-header{
+header {
     background-color: var(--header);
     display: flex;
     align-items: center;
     color: var(--escrita2);
+}
+body{
 
 }
