@@ -13,12 +13,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--principal); 
-    text-align: center;
+    align-items: center;
+    
 }
 
 header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         color: var(--escrita2);
         padding: 10px;
