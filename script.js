@@ -22,21 +22,7 @@ d
   
 }
 function mostraReposta (card)   {
-    const resposta = card.querySelector ('.resposta-cartao')
-if(resposta.style.display === 'none'){
-resposta.style.display = 'block';
-
-
-
-}
-    else{
-        resposta.style.display = 'none';
-
-
-    }
-}
-function mostraReposta (card)   {
-    const resposta = card.querySelector ('.resposta2-cartao')
+    const resposta = card.querySelector ('.resposta-cartao', '.resposta2-cartao')
 if(resposta.style.display === 'none'){
 resposta.style.display = 'block';
 
