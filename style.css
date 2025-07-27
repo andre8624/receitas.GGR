@@ -52,7 +52,7 @@ header {
         background-color: var(--detalhe);
         padding: 2rem ;
         display: flex;
-        align-items: initial;
+        align-items: initials;
         color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
@@ -60,11 +60,7 @@ header {
 
     }
  
-    .resposta-cartao p{
-        text-align: center;
-
-    }
-
+  
     .ilustrativo{
    border-radius: 10px;
 }
