@@ -55,7 +55,10 @@ header {
         border-radius: 10px;
 
     }
-.ilustrativo
+
+    .ilustrativo{
+   border-radius: 10px;
+}
      footer{
        background-color: var(--header);
        position: fixed;
