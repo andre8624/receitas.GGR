@@ -31,7 +31,7 @@ header {
         display: grid;
         gap: 2rem;
         margin: 2rem;
-        border-radius: 10px;
+
     }
     .conteudo-cartao{
         background-color: var(--caixa);
@@ -39,7 +39,7 @@ header {
         border: 1px solid var(--detalhe);
         transition: transform 0.2;
         box-shadow: 5px 5px 20px var(--escrita1);
-
+        border-radius: 10px;
     }
 
     .conteudo-cartao:hover{
