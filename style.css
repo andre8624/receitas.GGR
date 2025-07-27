@@ -48,7 +48,6 @@ header {
     .resposta-cartao{
         background-color: var(--detalhe);
         padding: 2rem ;
-        max-width: 100%;
         text-align: center;
         color:var(--escrita2);
         margin-top: 2rem;  
