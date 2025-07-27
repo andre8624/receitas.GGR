@@ -59,7 +59,11 @@ header {
         border-radius: 10px;
 
     }
- 
+   .resposta-cartao p{
+        text-align: center;
+
+    }
+
   
     .ilustrativo{
    border-radius: 10px;
