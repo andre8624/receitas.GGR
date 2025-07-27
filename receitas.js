@@ -1,4 +1,4 @@
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','resposta ou sla' , 'a')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
 criaCartao('', 'Como se calcula a energia cinetica de um objeto?','Usamos a fórmula Ec=mv²/2')
 
