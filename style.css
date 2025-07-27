@@ -52,21 +52,17 @@ header {
         background-color: var(--detalhe);
         padding: 2rem ;
         display: flex;
-        align-items: initials;
         color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
 
     }
-   .resposta-cartao p{
-        text-align: center;
-
-    }
-
+ 
   
     .ilustrativo{
    border-radius: 10px;
+   align-items: flex-start;
 }
      footer{
        background-color: var(--header);
