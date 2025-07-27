@@ -11,7 +11,7 @@ function criaCartao (categoria, pergunta, resposta){
     <div class="resposta-cartao">
         <p>${resposta}</p>
     </div>
-s
+
 </div>
     `
 
