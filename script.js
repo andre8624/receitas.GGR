@@ -18,11 +18,25 @@ function criaCartao (categoria, pergunta, resposta, resposta2){
     `
 
  container.appendChild(cartao);
-
+d
   
 }
 function mostraReposta (card)   {
     const resposta = card.querySelector ('.resposta-cartao')
+if(resposta.style.display === 'none'){
+resposta.style.display = 'block';
+
+
+
+}
+    else{
+        resposta.style.display = 'none';
+
+
+    }
+}
+function mostraReposta (card)   {
+    const resposta = card.querySelector ('.resposta2-cartao')
 if(resposta.style.display === 'none'){
 resposta.style.display = 'block';
 
