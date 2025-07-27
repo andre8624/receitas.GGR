@@ -27,7 +27,7 @@ header {
         background-color: var(--header);
       
     }
-      #conteiner{
+      #container{
         display: grid;
         gap: 2rem;
         margin: 2rem;
