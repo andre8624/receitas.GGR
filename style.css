@@ -37,7 +37,7 @@ header {
         padding: 40px;
         border: 1px solid var(--detalhe);
         transition: transform 0.2;
-        box-shadow: 5px 5px 20px var(--escrita1);
+        box-shadow: 3px 3px 10px var(--escrita1);
         border-radius: 10px;
     }
 
