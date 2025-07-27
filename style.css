@@ -5,7 +5,7 @@
 
 :root{
     --principal: #fff7d5;
-    --caixa:#000000;
+    --caixa:#b96767;
     --header: #7c0406;
     --detalhe: #4f6820;
     --escrita1: #000000;
@@ -33,12 +33,14 @@ header {
         margin: 2rem;
     }
     .conteudo-cartao{
-        background-color: var(--cartao-frente);
-        padding: 40px;s
-        border: 1px solid var(--detaque);
+        background-color: var(--caixa);
+        padding: 40px;
+        border: 1px solid var(--detalhe);
         transition: transform 0.2;
         box-shadow: 5px 5px 20px var(--escrita1);
+
     }
+
     .conteudo-cartao:hover{
         transform: scale(1.02);
     }
