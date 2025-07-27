@@ -39,6 +39,7 @@ header {
         transition: transform 0.2;
         box-shadow: 3px 3px 10px var(--escrita1);
         border-radius: 10px;
+        text-align: center;
     }
 
     .conteudo-cartao:hover{
