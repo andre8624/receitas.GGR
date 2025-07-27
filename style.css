@@ -48,8 +48,8 @@ header {
     .resposta-cartao{
         background-color: var(--detalhe);
         padding: 2rem ;
-        align-items: initial;s
-        color:var(--escrita2);
+        align-items: initial;
+        color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
