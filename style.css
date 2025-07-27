@@ -27,12 +27,6 @@ header {
         background-color: var(--header);
       
     }
-    .caixa{
-        display: flex;
-        align-items: center;
-        color: var(--escrita1);
-        background-color: var(--caixa);
-    }
       #caixa{
         display: grid;
         gap: 2rem;
@@ -43,16 +37,16 @@ header {
         padding: 40px;s
         border: 1px solid var(--detaque);
         transition: transform 0.2;
-        box-shadow: 5px 5px 20px var(--preto);
+        box-shadow: 5px 5px 20px var(--escrita1);
     }
     .conteudo-cartao:hover{
         transform: scale(1.02);
     }
     .resposta-cartao{
-        background-color: var(--cartao-verso);
+        background-color: var(--detalhe);
         padding: 2rem ;
         text-align: center;
-        color:var(--branco);
+        color:var(--escrita2);
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
