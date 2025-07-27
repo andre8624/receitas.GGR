@@ -15,7 +15,7 @@ function criaCartao (categoria, pergunta, resposta, imagem){
         <p>${resposta}</p>
     </div>
     <div class="resposta-cartao">
-        <p>${imagem}</p>
+        <p>${resposta}</p>
     </div>
 </div>
     `
