@@ -1,25 +1,23 @@
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss<br>ssssssssssssssssssssssssssssssssssssssssssssss<br>ssssssssssssssssssssssssssssssssssssssssssssssssssssss<br>sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('', 'Como se calcula a energia cinetica de um objeto?','Usamos a fórmula Ec=mv²/2')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('', 'Qual era a justificativa que Vargas deu para dar um golpe de estado?','Ele utilizou como pretesto, o plano cohen, que era um suposto plano comunista para tomar o poder')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('', 'Como calcular a velocidade média de consumo?','V=Δn/Δt')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Física', 'Como calcular a velociadade média?','w')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Física', 'Qual é a formula do Movimento Uniforme(MU)?','S=S0+V∆t')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('', 'Como se calcula a Energia de Ativação(EAT)?','utiliza-se a fórmula EAT = ECA - HR')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Matemática','Qual é a fórmula da função afim?','utiliza-se a fórmula f(x) ax+b')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Matemática','Qual é a fórmula usada para calcular o seno?','utiliza-se a fórmula CO/H')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Matemática','Qual é a fórmula usada para calcular o cosseno?','utiliza-se a fórmula CA/H')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('Matemática','Qual é a fórmula usada para calcular a Tangente?','utiliza-se a fórmula CO/CA')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('a','O que foi a guerra do contestado?','foi um conflito armado ocorrido de outubro de 1912 a agosto de 1916, que teve como partes beligerantes posseiros e pequenos proprietários de terras contra os governos dos estados de Santa Catarina e Paraná, além do Governo Federal brasileiro')
- 
-
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
