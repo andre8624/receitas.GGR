@@ -41,7 +41,7 @@ header {
         border-radius: 10px;
     
     }
-    .conteudo-cartao h3 , h5 {
+    .conteudo-cartao h3 , h4 {
         text-align: center;
     }
 
@@ -51,12 +51,18 @@ header {
     .resposta-cartao{
         background-color: var(--detalhe);
         padding: 2rem ;
-        text-align: center;
         color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
 
+    }
+
+    .resposta-cartao img{
+     align-items: initial;
+    }
+    .resposta-cartao p{
+        text-align: center;
     }
 
     .ilustrativo{
