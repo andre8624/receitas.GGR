@@ -1,4 +1,4 @@
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','resposta ou sla')
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','resposta ou sla' , 'image.png')
 
 criaCartao('', 'Como se calcula a energia cinetica de um objeto?','Usamos a fórmula Ec=mv²/2')
 
@@ -6,7 +6,7 @@ criaCartao('', 'Qual era a justificativa que Vargas deu para dar um golpe de est
 
 criaCartao('', 'Como calcular a velocidade média de consumo?','V=Δn/Δt')
 
-criaCartao('Física', 'Como calcular a velociadade média?',' usamos a fórmula, Vm=Δns/Δt')
+criaCartao('Física', 'Como calcular a velociadade média?','w')
 
 criaCartao('Física', 'Qual é a formula do Movimento Uniforme(MU)?','S=S0+V∆t')
 
