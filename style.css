@@ -52,16 +52,14 @@ header {
         background-color: var(--detalhe);
         padding: 2rem ;
         display: flex;
+        align-items: initial;
         color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
 
     }
-
-    .resposta-cartao img{
-     align-items: initial;
-    }
+ 
     .resposta-cartao p{
         text-align: center;
 
