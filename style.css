@@ -51,6 +51,7 @@ header {
     .resposta-cartao{
         background-color: var(--detalhe);
         padding: 2rem ;
+        display: flex;
         color: var(--escrita2);
         margin-top: 2rem;  
         display: none;     
@@ -63,6 +64,7 @@ header {
     }
     .resposta-cartao p{
         text-align: center;
+
     }
 
     .ilustrativo{
