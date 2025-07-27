@@ -33,7 +33,7 @@ header {
         color: var(--escrita1);
         background-color: var(--caixa);
     }
-      #container{w
+      #container{
         display: grid;
         gap: 2rem;sssss
         margin: 2rem;
