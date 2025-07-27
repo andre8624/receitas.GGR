@@ -58,12 +58,13 @@ header {
         margin-top: 2rem;  
         display: none;     
         border-radius: 10px;
+        overflow: hidden;
 
     }
 
     .ilustrativo{
    border-radius: 10px;
-    float: left;
+   float: left;
 }
      footer{
        background-color: var(--header);
