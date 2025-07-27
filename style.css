@@ -49,7 +49,6 @@ header {
         background-color: var(--detalhe);
         padding: 2rem ;
          align-items: initial;
-        text-align: center;
         color:var(--escrita2);
         margin-top: 2rem;  
         display: none;     
