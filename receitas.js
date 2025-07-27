@@ -21,3 +21,5 @@ criaCartao('Matemática','Qual é a fórmula usada para calcular o cosseno?','ut
 criaCartao('Matemática','Qual é a fórmula usada para calcular a Tangente?','utiliza-se a fórmula CO/CA')
 
 criaCartao('a','O que foi a guerra do contestado?','foi um conflito armado ocorrido de outubro de 1912 a agosto de 1916, que teve como partes beligerantes posseiros e pequenos proprietários de terras contra os governos dos estados de Santa Catarina e Paraná, além do Governo Federal brasileiro')
+ 
+
