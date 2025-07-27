@@ -54,6 +54,7 @@ header {
         display: none;     
         border-radius: 10px;
         column-gap: 20px;
+        align-items: initial;
     }
 
 
