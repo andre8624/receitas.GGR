@@ -41,7 +41,7 @@ header {
         border-radius: 10px;
     
     }
-    .conteudo-cartao h3 {
+    .conteudo-cartao h3 , h5 {
         text-align: center;
     }
 
