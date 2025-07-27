@@ -1,4 +1,4 @@
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','<img class="ilustrativo" src="image.png" alt="ilustrativo"> ' )
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','<img class="ilustrativo" src="image.png" alt="ilustrativo"> <br>a alalallalalalalallalalalla' )
 
 criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
