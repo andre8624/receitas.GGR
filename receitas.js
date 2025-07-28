@@ -1,15 +1,10 @@
 criaCartao('classe' ,'pergunta ou o que tu quiser falar','<img class="ilustrativo" src="image.png" alt="ilustrativo"> <br>a alalallalalalalallalalalla' )
 
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','<ul><li>sssssssssssssssss<li>ssssssssssssssssssssssssssssssssssssssssssss' )
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','<ul><li>sssssssssssssssss</li>sssss</ul>ssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssa<br>ssssssssss<br>s<br>ss<br>s<br><br><br><br><br><br><br><br><br><br><br><br>vsssssssssssssssss' )
-
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
+criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssa<br>sssssssssssssssssssssssssssssss' )
 
 criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
 criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
 
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
-
-criaCartao('classe' ,'pergunta ou o que tu quiser falar','sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss' )
