@@ -28,6 +28,9 @@ header {
     
   
 }
+header h2 {
+    margin-left: 200px;
+}
 
 
 .grade {
