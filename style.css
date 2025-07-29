@@ -65,6 +65,10 @@ header {
     overflow: hidden;
 
 }
+.row {
+    justify-content: space-between;
+    
+}
 
 .resposta-cartao .preparo {
     text-align: left;
