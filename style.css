@@ -56,12 +56,13 @@ header {
 .resposta-cartao {
     background-color: var(--detalhe);
     padding: 2rem;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
     flex-direction: row;
+    display: none;
     border-radius: 10px;
     overflow: hidden;
 
