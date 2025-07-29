@@ -45,7 +45,8 @@ header {
 
 }
 
-.conteudo-cartao h3, h4 {
+.conteudo-cartao h3,
+h4 {
     text-align: center;
 }
 
@@ -70,10 +71,11 @@ header {
 .resposta-cartao .preparo {
     text-align: left;
     font-size: larger;
-    margin: 1,5rem;
+    margin: 1.5rem;
 }
+
 .resposta-cartao .ingredientes {
-     text-align: right;
+    text-align: right;
     font-size: larger;
 }
 
