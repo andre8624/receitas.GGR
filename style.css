@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between 200px;   
+    justify-content: space-between 20rem;   
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
