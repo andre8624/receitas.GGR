@@ -45,8 +45,7 @@ header {
 
 }
 
-.conteudo-cartao h3,
-h4 {
+.conteudo-cartao h3, h4 {
     text-align: center;
 }
 
@@ -64,11 +63,7 @@ h4 {
     margin-top: 2rem;
     display: none;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    overflow: hidden;
 
 }
 
@@ -79,20 +74,8 @@ h4 {
 
 .ilustrativo {
     border-radius: 10px;
-
+    float: left;
     margin-right: 2rem;
-}
-
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
 }
 
 footer {
