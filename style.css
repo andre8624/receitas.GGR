@@ -23,6 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: right;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
@@ -30,9 +31,6 @@ header {
   
 }
 
-header h2{
-    text-align: right;
-}
 #container {
     display: grid;
     gap: 2rem;
