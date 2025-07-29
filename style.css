@@ -56,7 +56,8 @@ header {
 .resposta-cartao {
     background-color: var(--detalhe);
     padding: 2rem;
-    display: none;
+    display: flex;
+    justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
     border-radius: 10px;
@@ -64,8 +65,7 @@ header {
 
 }
 .row {
-    display: flex;
-    justify-content: space-between;
+    display: none;
 
 }
 
