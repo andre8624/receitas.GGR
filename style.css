@@ -20,9 +20,7 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
+    display: grid;
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
