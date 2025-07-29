@@ -31,9 +31,6 @@ header {
 
 #container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
     gap: 2rem;
     margin: 2rem;
 }
@@ -48,8 +45,7 @@ header {
 
 }
 
-.conteudo-cartao h3,
-h4 {
+.conteudo-cartao h3, h4 {
     text-align: center;
 }
 
@@ -60,36 +56,30 @@ h4 {
 .resposta-cartao {
     background-color: var(--detalhe);
     padding: 2rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
     border-radius: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    overflow: hidden;
+
 }
 
 .resposta-cartao .preparo {
+    text-align: left;
     font-size: larger;
 }
 
 .resposta-cartao .ingredientes {
+     text-align: right;
     font-size: larger;
 }
 
 .ilustrativo {
     border-radius: 10px;
+    float: left;
 
-}
-.div1 {
-    grid-row: span 3 / span 3;
-}
-
-.div3 {
-    grid-row: span 3 / span 3;
-}
-
-.div4 {
-    grid-row: span 3 / span 3;
 }
 
 footer {
