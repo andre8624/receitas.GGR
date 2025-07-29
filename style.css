@@ -45,7 +45,8 @@ header {
 
 }
 
-.conteudo-cartao h3, h4 {
+.conteudo-cartao h3,
+h4 {
     text-align: center;
 }
 
@@ -63,8 +64,8 @@ header {
     margin-top: 2rem;
     display: none;
     border-radius: 10px;
-   display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
