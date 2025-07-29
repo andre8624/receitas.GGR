@@ -56,7 +56,7 @@ h4 {
 
 .resposta-cartao {
     background-color: var(--detalhe);
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +69,7 @@ h4 {
 }
 
 .resposta-cartao .preparo {
-    text-align: left;
+    text-align: center;
     font-size: larger;
 }
 
