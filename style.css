@@ -58,7 +58,7 @@ h4 {
     background-color: var(--detalhe);
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: var(--escrita2);
