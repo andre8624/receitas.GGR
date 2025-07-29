@@ -23,7 +23,6 @@ header {
     display: grid;
     align-items: center;
     color: var(--escrita2);
-    padding: 30px;
     background-color: var(--header);
     
 }
