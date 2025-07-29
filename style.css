@@ -31,7 +31,7 @@ header {
 }
 
 header h2{
-    float: right;
+    text-align: left;
 }
 #container {
     display: grid;
