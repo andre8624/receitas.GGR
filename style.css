@@ -74,7 +74,9 @@ h4 {
 }
 
 .resposta-cartao .ingredientes {
-    float: right font-size: larger;
+    
+    float: right;
+    font-size: larger;
 }
 
 .ilustrativo {
