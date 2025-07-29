@@ -45,7 +45,8 @@ header {
 
 }
 
-.conteudo-cartao h3, h4 {
+.conteudo-cartao h3,
+h4 {
     text-align: center;
 }
 
@@ -64,16 +65,20 @@ header {
     display: none;
     border-radius: 10px;
     overflow: hidden;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .resposta-cartao .preparo {
     text-align: left;
     font-size: larger;
-    margin: 1,5rem;
+    margin: 1, 5rem;
 }
+
 .resposta-cartao .ingredientes {
-     text-align: right;
+    text-align: right;
     font-size: larger;
 }
 
@@ -81,6 +86,17 @@ header {
     border-radius: 10px;
     float: left;
 
+}
+.div1 {
+    grid-row: span 3 / span 3;
+}
+
+.div3 {
+    grid-row: span 3 / span 3;
+}
+
+.div4 {
+    grid-row: span 3 / span 3;
 }
 
 footer {
