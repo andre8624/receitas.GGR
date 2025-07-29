@@ -65,6 +65,7 @@ h4 {
     display: none;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -76,6 +77,8 @@ h4 {
 .resposta-cartao .ingredientes {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     font-size: larger;
 }
 
