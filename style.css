@@ -45,7 +45,8 @@ header {
 
 }
 
-.conteudo-cartao h3, h4 {
+.conteudo-cartao h3,
+h4 {
     text-align: center;
 }
 
@@ -71,10 +72,9 @@ header {
     float: none;
     font-size: larger;
 }
+
 .resposta-cartao .ingredientes {
-     float: right
-     
-    font-size: larger;
+    float: right font-size: larger;
 }
 
 .ilustrativo {
