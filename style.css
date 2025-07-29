@@ -26,12 +26,12 @@ header {
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-    overflow: hidden;
+    
   
 }
 
 header h2{
-    text-align: left;
+    text-align: right;
 }
 #container {
     display: grid;
