@@ -21,12 +21,12 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-
+  
 }
 
 #container {
@@ -80,7 +80,11 @@ header {
     float: left;
 
 }
+.anao {
+    border-radius: 50px;
+    float: left;
 
+}
 footer {
     background-color: var(--header);
     position: fixed;
