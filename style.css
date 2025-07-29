@@ -57,12 +57,8 @@ h4 {
 .resposta-cartao {
     background-color: var(--detalhe);
     padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
-    display: none;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
