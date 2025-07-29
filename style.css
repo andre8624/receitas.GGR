@@ -68,11 +68,11 @@ header {
 }
 
 .resposta-cartao .preparo {
-    text-align: center;
+    float: none;
     font-size: larger;
 }
 .resposta-cartao .ingredientes {
-     text-align: right;
+     float: right
     font-size: larger;
 }
 
