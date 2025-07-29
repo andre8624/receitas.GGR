@@ -22,8 +22,8 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     text-align: right;
+    align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
