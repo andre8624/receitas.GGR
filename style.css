@@ -28,7 +28,9 @@ header {
     background-color: var(--header);
   
 }
-
+header h2{
+    text-align: center;
+}
 #container {
     display: grid;
     gap: 2rem;
@@ -82,7 +84,7 @@ header {
 }
 .anao {
     border-radius: 50px;
-    width: 100px;
+    width: 80px;
     height: auto;
 
 }
