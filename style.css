@@ -56,7 +56,6 @@ header {
 .resposta-cartao {
     background-color: var(--detalhe);
     padding: 2rem;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--escrita2);
