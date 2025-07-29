@@ -22,7 +22,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between 20rem;   
+    justify-content: space-between;   
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
@@ -31,6 +31,16 @@ header {
   
 }
 
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+}
+    
+
+        
 #container {
     display: grid;
     gap: 2rem;
