@@ -66,8 +66,9 @@ header {
 
 }
 .row {
+    display: flex;
     justify-content: space-between;
-    
+
 }
 
 .resposta-cartao .preparo {
