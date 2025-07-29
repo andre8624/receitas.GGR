@@ -45,8 +45,7 @@ header {
 
 }
 
-.conteudo-cartao h3,
-h4 {
+.conteudo-cartao h3, h4 {
     text-align: center;
 }
 
@@ -65,7 +64,6 @@ h4 {
     display: none;
     border-radius: 10px;
     overflow: hidden;
-     flex-direction: column;
 
 }
 
@@ -73,12 +71,8 @@ h4 {
     text-align: left;
     font-size: larger;
 }
-
 .resposta-cartao .ingredientes {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+     text-align: end;
     font-size: larger;
 }
 
