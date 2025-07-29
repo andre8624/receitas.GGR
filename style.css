@@ -45,8 +45,7 @@ header {
 
 }
 
-.conteudo-cartao h3,
-h4 {
+.conteudo-cartao h3, h4 {
     text-align: center;
 }
 
@@ -56,29 +55,32 @@ h4 {
 
 .resposta-cartao {
     background-color: var(--detalhe);
-    padding: 1.5rem;
+    padding: 2rem;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
+    display: none;
     border-radius: 10px;
     overflow: hidden;
 
 }
 
-.preparo {
+.resposta-cartao .preparo {
+    text-align: left;
     font-size: larger;
+    margin: 1,5rem;
 }
-
-.ingredientes {
+.resposta-cartao .ingredientes {
+     text-align: right;
     font-size: larger;
 }
 
 .ilustrativo {
-    max-width: 100%;
-    height: auto;
     border-radius: 10px;
+    float: left;
+    margin-right: 2rem;
 }
 
 footer {
