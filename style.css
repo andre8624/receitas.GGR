@@ -22,7 +22,6 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
@@ -82,7 +81,8 @@ header {
 }
 .anao {
     border-radius: 50px;
-    float: left;
+    max-width: 50%;
+    height: auto;
 
 }
 footer {
