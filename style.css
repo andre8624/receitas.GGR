@@ -31,6 +31,9 @@ header {
 
 #container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
     gap: 2rem;
     margin: 2rem;
 }
@@ -60,7 +63,6 @@ h4 {
     color: var(--escrita2);
     margin-top: 2rem;
     border-radius: 10px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
