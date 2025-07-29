@@ -60,7 +60,7 @@ header {
     justify-content: space-between;
     color: var(--escrita2);
     margin-top: 2rem;
-    column-count: 6;
+    column-count: 3;
     display: none;
     border-radius: 10px;
     overflow: hidden;
