@@ -73,7 +73,7 @@ header {
     margin: 1,5rem;
 }
 .resposta-cartao .ingredientes {
-     text-align: end;
+     text-align: right;
     font-size: larger;
 }
 
