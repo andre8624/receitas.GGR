@@ -28,18 +28,18 @@ header {
     
   
 }
-header h2 {
-    margin-left: 200px;
-}
 
 
 .grade {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
 }
     
+.div2 {
+    grid-column-start: 3;
+}
 
         
 #container {
