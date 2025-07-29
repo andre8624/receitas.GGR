@@ -67,19 +67,15 @@ h4 {
 }
 
 .resposta-cartao .preparo {
-    text-align: left;
     font-size: larger;
-    margin: 1, 5rem;
 }
 
 .resposta-cartao .ingredientes {
-    text-align: right;
     font-size: larger;
 }
 
 .ilustrativo {
     border-radius: 10px;
-    float: left;
 
 }
 .div1 {
