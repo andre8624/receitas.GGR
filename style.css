@@ -58,6 +58,7 @@ h4 {
     background-color: var(--detalhe);
     padding: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     color: var(--escrita2);
@@ -81,7 +82,6 @@ h4 {
 .ilustrativo {
     border-radius: 10px;
     float: left;
-    margin-right: 2rem;
 }
 
 footer {
