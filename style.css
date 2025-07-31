@@ -90,13 +90,13 @@ header {
 .ilustrativo {
     border-radius: 10px;
     margin-right: 1.5rem;
-    height: 150%;
     float: left;
+    height: 500px;
+    width: 750px;
+    
 
 }
-.ingredientes {
-     text-align: center;
-}
+
 .anao {
     border-radius: 100px;
     width: 40px;
