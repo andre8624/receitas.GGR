@@ -96,7 +96,15 @@ header {
     width: 800px;
 
 }
+.chiffon {
+border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 800px;
+    width: 600px;
 
+}
 .anao {
     border-radius: 100px;
     width: 40px;
