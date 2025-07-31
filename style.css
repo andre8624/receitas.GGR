@@ -75,21 +75,20 @@ header {
     margin-top: 2rem;
     border-radius: 10px;
     overflow: hidden;
+    font-size: larger;
 
 }
 .resposta-cartao h1{
     text-align: left;
-    font-size: 150%;
+    
 }
 .resposta-cartao .preparo {
-    text-align: left;
-    font-size: larger;
+    text-align: right;
+  
 }
 
 .resposta-cartao .ingredientes {
-    font-size: larger;
-    text-align: right;
-    background-color: aliceblue;
+    font-size: larger
 }
 
 .ilustrativo {
