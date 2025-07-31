@@ -77,7 +77,10 @@ header {
     overflow: hidden;
 
 }
-
+.resposta-cartao h1{
+    text-align: left;
+    font-size: larger;
+}
 .resposta-cartao .preparo {
     text-align: left;
     font-size: larger;
