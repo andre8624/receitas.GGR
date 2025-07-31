@@ -25,6 +25,7 @@ header {
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
+    max-width: 100%;
     
 }
 
@@ -47,6 +48,7 @@ header {
     display: grid;
     gap: 2rem;
     margin: 2rem;
+
 }
 
 .conteudo-cartao {
@@ -76,6 +78,7 @@ header {
     border-radius: 10px;
     overflow: hidden;
     font-size: larger;
+    max-width: 100%;
 
 }
 
@@ -108,4 +111,5 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+    max-width: 100%;
 }
