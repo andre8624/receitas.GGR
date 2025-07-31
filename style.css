@@ -84,8 +84,10 @@ header {
 
 .resposta-cartao .preparo {
     text-align: left;
+    font-size: larger;
   
 }
+
 
 .ilustrativo {
     border-radius: 10px;
