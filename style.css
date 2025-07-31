@@ -94,6 +94,9 @@ header {
     float: left;
 
 }
+.ingredientes {
+     text-align: center;
+}
 .anao {
     border-radius: 100px;
     width: 40px;
