@@ -78,16 +78,15 @@ header {
     border-radius: 10px;
     overflow: hidden;
     font-size: larger;
+    font-weight: bold;
     max-width: 100%;
 
 }
 
 .resposta-cartao .preparo {
     text-align: left;
-    font-size: larger;
   
 }
-
 
 .ilustrativo {
     border-radius: 10px;
