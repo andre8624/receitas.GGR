@@ -23,6 +23,7 @@ header {
     display: grid;
     align-items: center;
     color: var(--escrita2);
+    padding: 30px;
     background-color: var(--header);
     
 }
@@ -37,7 +38,7 @@ header {
     
 .div2 {
     grid-column: span 2 / span 2;
-    grid-column-start: 4;
+    grid-column-start: 3;
 }
 
         
