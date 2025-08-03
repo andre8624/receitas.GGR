@@ -109,7 +109,7 @@ h4 {
 
 }
 li{
-    line-gap-override: 20px;
+    margin-bottom: 20px;
 }
 .nata {
     border-radius: 10px;
