@@ -108,6 +108,14 @@ h4 {
     width: 900px;
 
 }
+    .tira{
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 2000px;
+    width: 780px;
+    }
 li{
     margin-bottom: 20px;
 }
