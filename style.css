@@ -45,7 +45,7 @@ header {
 
 
 #container {
-    display: flex;
+    display: contents;
     gap: 2rem;
     margin: 3rem;
     
