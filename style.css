@@ -51,7 +51,7 @@ header {
     margin: 3rem;
     
 }
-@media (min-width:768px) { 
+@media (min-width:768px) and (max-width: 1920px) { 
 .conteudo-cartao {
     background-color: var(--caixa);
     padding: 40px;
