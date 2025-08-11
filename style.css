@@ -89,7 +89,7 @@ h4 {
     text-align: left;
 
 }
-@media (min-width: 768px) { 
+@media (max-width: 1080px) { 
 .ilustrativo {
     border-radius: 10px;
     margin-right: 1.5rem;
