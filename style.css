@@ -51,8 +51,7 @@ header {
     margin: 3rem;
     
 }
-}
-@media (max-width: 600px) { 
+
 .conteudo-cartao {
     background-color: var(--caixa);
     padding: 40px;
@@ -62,7 +61,7 @@ header {
     border-radius: 10px;
 
 }
-}
+
 .conteudo-cartao h1,
 h4 {
     text-align: center;
