@@ -16,41 +16,44 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--principal);
-    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* HEADER */
 header {
     display: grid;
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-    max-width: 100%;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-size: 2rem;
 }
 
+/* GRID PRINCIPAL */
 .grade {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 .div2 {
     grid-column: span 4;
-    grid-column-start: 4;
-    margin-left: 20px;
+    grid-column-start: 2;
 }
 
+/* CONTAINER DE CARTÕES */
 #container {
     display: grid;
     gap: 2rem;
     margin: 3rem;
+    flex: 1;
 }
 
 .conteudo-cartao {
@@ -58,19 +61,19 @@ header h1 {
     padding: 40px;
     border: 1px solid var(--detalhe);
     transition: transform 0.2s ease;
-    box-shadow: 3px 3px 10px var(--escrita1);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    cursor: pointer;
 }
 
 .conteudo-cartao h1,
 .conteudo-cartao h4 {
-    text-align: center;
     color: var(--escrita2);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .conteudo-cartao:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .resposta-cartao {
@@ -78,9 +81,8 @@ header h1 {
     padding: 2rem;
     display: none;
     color: var(--escrita2);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     border-radius: 10px;
-    overflow: hidden;
     font-size: larger;
     font-weight: bold;
     line-height: 1.6;
@@ -88,67 +90,43 @@ header h1 {
 
 .resposta-cartao .preparo {
     text-align: left;
-    margin-left: 1rem;
 }
 
-/* AJUSTE DAS IMAGENS: HORIZONTAL, ALTA QUALIDADE, SEM DISTORÇÃO */
+/* LISTAS */
+li {
+    margin: 13px 0;
+}
+
+/* IMAGENS ILUSTRATIVAS (substitui float por grid/flex) */
+.imagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
 .ilustrativo,
 .Chiffon,
 .tira,
 .creme,
 .nata {
-    /* Remove float e posicionamento errado */
-    float: none !important;
-
-    /* Tamanho responsivo com proporção horizontal */
+    border-radius: 10px;
     width: 100%;
     max-width: 920px;
     height: auto;
-    min-height: 300px;
-    aspect-ratio: 16 / 9; /* força proporção horizontal ideal */
-
-    /* Centralizado */
+    object-fit: cover;
     display: block;
-    margin: 0 auto 1.5rem auto;
-
-    /* Borda suave e sombra */
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-
-    /* Mantém qualidade da imagem */
-    image-rendering: -webkit-optimize-contrast;
-    object-fit: cover; /* preenche o espaço sem distorcer */
-    background-color: #f0f0f0; /* cor de fundo suave se houver corte */
 }
 
-/* Ajuste para telas menores */
-@media (max-width: 768px) {
-    .ilustrativo,
-    .Chiffon,
-    .tira,
-    .creme,
-    .nata {
-        width: 100%;
-        max-width: 100%;
-        aspect-ratio: auto;
-        height: auto;
-        min-height: 200px;
-    }
+/* Tamanhos específicos ajustados com media queries */
+.ilustrativo { max-width: 920px; }
+.Chiffon { max-width: 900px; }
+.tira { max-width: 880px; }
+.creme { max-width: 800px; }
+.nata { max-width: 800px; }
 
-    #container {
-        margin: 1.5rem;
-    }
-
-    .conteudo-cartao {
-        padding: 25px;
-    }
-}
-
-li {
-    margin: 13px 0;
-    color: var(--escrita2);
-}
-
+/* BOTÃO (exemplo de uso com JS) */
 .anao {
     border-radius: 50%;
     width: 40px;
@@ -157,23 +135,126 @@ li {
     border: 2px solid var(--detalhe);
     cursor: pointer;
     display: block;
-    margin: 1.5rem auto 0;
-    transition: background 0.3s;
+    margin: 10px auto;
 }
 
-.anao:hover {
-    background-color: var(--detalhe);
-}
-
+/* FOOTER FIXO RESPONSIVO */
 footer {
     background-color: var(--header);
-    position: fixed;
-    bottom: 0;
     color: var(--escrita2);
-    width: 100%;
     text-align: center;
     padding: 10px;
-    max-width: 100%;
-    font-size: 0.95rem;
-    z-index: 100;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* ===============================================
+   MEDIA QUERIES: RESPONSIVIDADE
+   =============================================== */
+
+/* CELULAR (até 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #container {
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .conteudo-cartao {
+        padding: 20px;
+    }
+
+    .conteudo-cartao h1 {
+        font-size: 1.3rem;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .div2 {
+        grid-column: auto;
+    }
+
+    .imagens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ilustrativo,
+    .Chiffon,
+    .tira,
+    .creme,
+    .nata {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* TABLET (481px até 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #container {
+        margin: 2rem;
+        gap: 1.5rem;
+    }
+
+    .conteudo-cartao {
+        padding: 30px;
+    }
+
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .div2 {
+        grid-column: span 2;
+        grid-column-start: 1;
+    }
+
+    .imagens-container {
+        justify-content: center;
+    }
+
+    .ilustrativo,
+    .Chiffon,
+    .tira,
+    .creme,
+    .nata {
+        max-width: 100%;
+    }
+}
+
+/* DESKTOP (acima de 1025px) */
+@media (min-width: 1025px) {
+    .grade {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .div2 {
+        grid-column: span 4;
+        grid-column-start: 4;
+    }
+}
+
+/* FOOTER - Ajuste para não sobrepor */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
