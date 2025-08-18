@@ -21,10 +21,8 @@ body {
     flex-direction: column;
 }
 
+
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
@@ -32,10 +30,11 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-/* CONTAINER GERAL */
+
 #container {
     display: flex;
     flex-direction: column;
@@ -44,8 +43,8 @@ header h1 {
     flex: 1;
 }
 
-/* LAYOUT FLEX: IMAGEM + TEXTO */
-.cartao-flex {
+
+.cartao {
     display: flex;
     gap: 2rem;
     background-color: var(--caixa);
@@ -56,53 +55,65 @@ header h1 {
     transition: transform 0.2s ease;
 }
 
-.cartao-flex:hover {
+.cartao:hover {
     transform: scale(1.01);
 }
 
-/* IMAGEM AJUSTADA AO LADO ESQUERDO */
-.cartao-flex img {
+
+.cartao-imagem {
     width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
-/* CONTEÚDO DE TEXTO (direita) */
+
 .conteudo-texto {
     flex: 1;
     padding: 2rem;
+    color: var(--escrita2);
     display: flex;
     flex-direction: column;
+}
+
+.conteudo-cartao {
+    cursor: pointer;
+}
+
+.conteudo-cartao h1 {
+    text-align: center;
+    margin-bottom: 1rem;
     color: var(--escrita2);
 }
 
-.conteudo-cartao h1,
 .conteudo-cartao h4 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .resposta-cartao {
-    background-color: var(--detalhe);
-    padding: 1.5rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-    font-size: larger;
-    font-weight: bold;
-    line-height: 1.6;
     display: none;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.resposta-cartao .preparo {
-    text-align: left;
+.resposta-cartao p {
+    color: var(--escrita2);
+    font-weight: bold;
 }
 
-li {
-    margin: 10px 0;
+
+.resposta-cartao ul {
+    margin: 1rem 0;
+    line-height: 1.6;
 }
 
-/* FOOTER */
+.resposta-cartao li {
+    margin: 8px 0;
+    list-style-position: inside;
+}
+
 footer {
     background-color: var(--header);
     color: var(--escrita2);
@@ -111,24 +122,17 @@ footer {
     width: 100%;
 }
 
-/* ===============================================
-   MEDIA QUERIES (RESPONSIVO)
-   =============================================== */
 
-/* MOBILE: Empilha imagem e texto */
+
 @media (max-width: 768px) {
-    .cartao-flex {
+    .cartao {
         flex-direction: column;
     }
 
-    .cartao-flex img {
+    .cartao-imagem {
         width: 100%;
-        height: 300px; /* altura fixa menor para mobile */
+        height: 300px;
         border-radius: 10px 10px 0 0;
-    }
-
-    .conteudo-texto {
-        padding: 1.5rem;
     }
 
     #container {
@@ -136,13 +140,8 @@ footer {
     }
 }
 
-/* TABLET E DESKTOP */
 @media (min-width: 769px) {
-    .cartao-flex img {
+    .cartao-imagem {
         width: 35%;
-    }
-
-    .conteudo-texto {
-        font-size: 1rem;
     }
 }
