@@ -16,7 +16,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--principal);
     align-items: center;
-
 }
 
 header {
@@ -26,30 +25,24 @@ header {
     padding: 30px;
     background-color: var(--header);
     max-width: 100%;
-
 }
-
 
 .grade {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    
 }
 
 .div2 {
     grid-column: span 4 / span 4;
     grid-column-start: 4;
     margin-left: 20px;
-
 }
-
 
 #container {
     display: grid;
     gap: 2rem;
     margin: 3rem;
-    
 }
 
 .conteudo-cartao {
@@ -59,7 +52,6 @@ header {
     transition: transform 0.2;
     box-shadow: 3px 3px 10px var(--escrita1);
     border-radius: 10px;
-
 }
 
 .conteudo-cartao h1,
@@ -82,24 +74,23 @@ h4 {
     font-size: larger;
     font-weight: bold;
     max-width: 100%;
-
 }
 
 .resposta-cartao .preparo {
     text-align: left;
-
 }
+
 @media (max-width: 1080px) { 
-.ilustrativo {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1700px;
-    width: 920px;
+    .ilustrativo {
+        border-radius: 10px;
+        margin-right: 1.5rem;
+        margin-bottom: 1.5rem;
+        float: left;
+        height: 1700px;
+        width: 920px;
+    }
+}
 
-}
-}
 .Chiffon {
     border-radius: 10px;
     margin-right: 1.5rem;
@@ -107,27 +98,30 @@ h4 {
     float: left;
     height: 1150px;
     width: 900px;
-
 }
-    .tira{
+
+.tira {
     border-radius: 10px;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     float: left;
     height: 1330px;
     width: 880px;
-    }
-    .creme{
+}
+
+.creme {
     border-radius: 10px;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     float: left;
     height: 1150px;
     width: 800px;
-    }
-li{
+}
+
+li {
     margin: 13px;
 }
+
 .nata {
     border-radius: 10px;
     margin-right: 1.5rem;
@@ -135,14 +129,12 @@ li{
     float: left;
     height: 1200px;
     width: 800px;
-
 }
 
 .anao {
     border-radius: 100px;
     width: 40px;
     height: 40px;
-
 }
 
 footer {
@@ -154,4 +146,89 @@ footer {
     text-align: center;
     padding: 10px;
     max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .div2 {
+        grid-column: auto;
+        margin-left: 0;
+    }
+
+    #container {
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .conteudo-cartao {
+        padding: 20px;
+    }
+
+    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
+        width: 100% !important;
+        height: auto !important;
+        float: none;
+        margin: 0 auto 1rem auto;
+        display: block;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container {
+        margin: 2rem;
+    }
+
+    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
+        width: 90% !important;
+        height: auto !important;
+        float: none;
+        margin: 0 auto 1.5rem auto;
+        display: block;
+    }
+}
+
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .grade {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #container {
+        margin: 2.5rem;
+    }
+
+    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .grade {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
