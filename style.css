@@ -21,9 +21,9 @@ body {
     flex-direction: column;
 }
 
-/* HEADER */
 header {
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
@@ -35,220 +35,114 @@ header h1 {
     font-size: 2rem;
 }
 
-/* GRID PRINCIPAL */
-.grade {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1rem;
-    margin: 0 1rem;
-}
-
-.div2 {
-    grid-column: span 4;
-    grid-column-start: 2;
-}
-
-/* CONTAINER DE CARTÕES */
+/* CONTAINER GERAL */
 #container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin: 3rem;
     flex: 1;
 }
 
-.conteudo-cartao {
+/* LAYOUT FLEX: IMAGEM + TEXTO */
+.cartao-flex {
+    display: flex;
+    gap: 2rem;
     background-color: var(--caixa);
-    padding: 40px;
     border: 1px solid var(--detalhe);
-    transition: transform 0.2s ease;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.cartao-flex:hover {
+    transform: scale(1.01);
+}
+
+/* IMAGEM AJUSTADA AO LADO ESQUERDO */
+.cartao-flex img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+/* CONTEÚDO DE TEXTO (direita) */
+.conteudo-texto {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--escrita2);
 }
 
 .conteudo-cartao h1,
 .conteudo-cartao h4 {
-    color: var(--escrita2);
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.conteudo-cartao:hover {
-    transform: scale(1.02);
-}
-
 .resposta-cartao {
     background-color: var(--detalhe);
-    padding: 2rem;
-    display: none;
-    color: var(--escrita2);
-    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
     border-radius: 10px;
     font-size: larger;
     font-weight: bold;
     line-height: 1.6;
+    display: none;
 }
 
 .resposta-cartao .preparo {
     text-align: left;
 }
 
-
 li {
-    margin: 13px 0;
+    margin: 10px 0;
 }
 
-.imagens-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.ilustrativo,
-.Chiffon,
-.tira,
-.creme,
-.nata {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 920px;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
-
-
-.ilustrativo { max-width: 920px; }
-.Chiffon { max-width: 900px; }
-.tira { max-width: 880px; }
-.creme { max-width: 800px; }
-.nata { max-width: 800px; }
-
-
-.anao {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: var(--escrita2);
-    border: 2px solid var(--detalhe);
-    cursor: pointer;
-    display: block;
-    margin: 10px auto;
-}
-
-
+/* FOOTER */
 footer {
     background-color: var(--header);
     color: var(--escrita2);
     text-align: center;
     padding: 10px;
     width: 100%;
-    margin-top: auto;
 }
 
+/* ===============================================
+   MEDIA QUERIES (RESPONSIVO)
+   =============================================== */
 
-@media (max-width: 480px) {
-    header {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    #container {
-        margin: 1rem;
-        gap: 1rem;
-    }
-
-    .conteudo-cartao {
-        padding: 20px;
-    }
-
-    .conteudo-cartao h1 {
-        font-size: 1.3rem;
-    }
-
-    .grade {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 1rem;
-    }
-
-    .div2 {
-        grid-column: auto;
-    }
-
-    .imagens-container {
+/* MOBILE: Empilha imagem e texto */
+@media (max-width: 768px) {
+    .cartao-flex {
         flex-direction: column;
-        align-items: center;
     }
 
-    .ilustrativo,
-    .Chiffon,
-    .tira,
-    .creme,
-    .nata {
-        max-width: 100%;
+    .cartao-flex img {
         width: 100%;
+        height: 300px; /* altura fixa menor para mobile */
+        border-radius: 10px 10px 0 0;
     }
-}
 
-
-@media (min-width: 481px) and (max-width: 1024px) {
-    header h1 {
-        font-size: 1.8rem;
+    .conteudo-texto {
+        padding: 1.5rem;
     }
 
     #container {
-        margin: 2rem;
-        gap: 1.5rem;
-    }
-
-    .conteudo-cartao {
-        padding: 30px;
-    }
-
-    .grade {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
         margin: 1.5rem;
     }
-
-    .div2 {
-        grid-column: span 2;
-        grid-column-start: 1;
-    }
-
-    .imagens-container {
-        justify-content: center;
-    }
-
-    .ilustrativo,
-    .Chiffon,
-    .tira,
-    .creme,
-    .nata {
-        max-width: 100%;
-    }
 }
 
-@media (min-width: 1025px) {
-    .grade {
-        grid-template-columns: repeat(7, 1fr);
+/* TABLET E DESKTOP */
+@media (min-width: 769px) {
+    .cartao-flex img {
+        width: 35%;
     }
 
-    .div2 {
-        grid-column: span 4;
-        grid-column-start: 4;
-    }
-}
-
-
-@media (max-width: 600px) {
-    footer {
-        font-size: 0.9rem;
-        padding: 8px;
+    .conteudo-texto {
+        font-size: 1rem;
     }
 }
