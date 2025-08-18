@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,52 +16,64 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--principal);
-    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* HEADER */
 header {
     display: grid;
     align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-    max-width: 100%;
+    text-align: center;
 }
 
+header h1 {
+    font-size: 2rem;
+}
+
+/* GRID PRINCIPAL */
 .grade {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+    margin: 0 1rem;
 }
 
 .div2 {
-    grid-column: span 4 / span 4;
-    grid-column-start: 4;
-    margin-left: 20px;
+    grid-column: span 4;
+    grid-column-start: 2;
 }
 
+/* CONTAINER DE CARTÕES */
 #container {
     display: grid;
     gap: 2rem;
     margin: 3rem;
+    flex: 1;
 }
 
 .conteudo-cartao {
     background-color: var(--caixa);
     padding: 40px;
     border: 1px solid var(--detalhe);
-    transition: transform 0.2;
-    box-shadow: 3px 3px 10px var(--escrita1);
+    transition: transform 0.2s ease;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
 .conteudo-cartao h1,
-h4 {
+.conteudo-cartao h4 {
+    color: var(--escrita2);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .conteudo-cartao:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .resposta-cartao {
@@ -70,97 +83,78 @@ h4 {
     color: var(--escrita2);
     margin-top: 2rem;
     border-radius: 10px;
-    overflow: hidden;
     font-size: larger;
     font-weight: bold;
-    max-width: 100%;
+    line-height: 1.6;
 }
 
 .resposta-cartao .preparo {
     text-align: left;
 }
 
-@media (max-width: 1080px) { 
-    .ilustrativo {
-        border-radius: 10px;
-        margin-right: 1.5rem;
-        margin-bottom: 1.5rem;
-        float: left;
-        height: 1700px;
-        width: 920px;
-    }
-}
-
-.Chiffon {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1150px;
-    width: 900px;
-}
-
-.tira {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1330px;
-    width: 880px;
-}
-
-.creme {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1150px;
-    width: 800px;
-}
 
 li {
-    margin: 13px;
+    margin: 13px 0;
 }
 
+.imagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.ilustrativo,
+.Chiffon,
+.tira,
+.creme,
 .nata {
     border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1200px;
-    width: 800px;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
+
+.ilustrativo { max-width: 920px; }
+.Chiffon { max-width: 900px; }
+.tira { max-width: 880px; }
+.creme { max-width: 800px; }
+.nata { max-width: 800px; }
+
+
 .anao {
-    border-radius: 100px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
+    background-color: var(--escrita2);
+    border: 2px solid var(--detalhe);
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
 }
+
 
 footer {
     background-color: var(--header);
-    position: fixed;
-    bottom: 0;
     color: var(--escrita2);
-    width: 100%;
     text-align: center;
     padding: 10px;
-    max-width: 100%;
+    width: 100%;
+    margin-top: auto;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 480px) {
     header {
         padding: 15px;
-        text-align: center;
     }
 
-    .grade {
-        grid-template-columns: 1fr;
-    }
-
-    .div2 {
-        grid-column: auto;
-        margin-left: 0;
+    header h1 {
+        font-size: 1.5rem;
     }
 
     #container {
@@ -172,63 +166,89 @@ footer {
         padding: 20px;
     }
 
-    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
-        width: 100% !important;
-        height: auto !important;
-        float: none;
-        margin: 0 auto 1rem auto;
-        display: block;
+    .conteudo-cartao h1 {
+        font-size: 1.3rem;
     }
 
-    footer {
-        font-size: 0.8rem;
-        padding: 8px;
+    .grade {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .div2 {
+        grid-column: auto;
+    }
+
+    .imagens-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ilustrativo,
+    .Chiffon,
+    .tira,
+    .creme,
+    .nata {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
 
-@media (min-width: 601px) and (max-width: 900px) {
-    .grade {
-        grid-template-columns: repeat(2, 1fr);
+@media (min-width: 481px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
     }
 
     #container {
         margin: 2rem;
+        gap: 1.5rem;
     }
 
-    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
-        width: 90% !important;
-        height: auto !important;
-        float: none;
-        margin: 0 auto 1.5rem auto;
-        display: block;
+    .conteudo-cartao {
+        padding: 30px;
     }
-}
 
-
-@media (min-width: 901px) and (max-width: 1200px) {
     .grade {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem;
     }
 
-    #container {
-        margin: 2.5rem;
+    .div2 {
+        grid-column: span 2;
+        grid-column-start: 1;
     }
 
-    img, .ilustrativo, .Chiffon, .tira, .creme, .nata {
+    .imagens-container {
+        justify-content: center;
+    }
+
+    .ilustrativo,
+    .Chiffon,
+    .tira,
+    .creme,
+    .nata {
         max-width: 100%;
-        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .grade {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .div2 {
+        grid-column: span 4;
+        grid-column-start: 4;
     }
 }
 
 
-@media (min-width: 1201px) {
-    .grade {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    #container {
-        max-width: 1200px;
-        margin: 0 auto;
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.9rem;
+        padding: 8px;
     }
 }
