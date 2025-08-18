@@ -19,21 +19,21 @@ body {
     align-items: center;
 }
 
-/* HEADER: botão à esquerda, título centralizado (H + V) */
+
 header {
     display: flex;
-    align-items: center;           /* Centraliza verticalmente */
-    justify-content: center;       /* Centraliza o conteúdo principal */
+    align-items: center;           
+    justify-content: center;      
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-    position: relative;            /* Para posicionar o botão absolutamente */
+    position: relative;          
     max-width: 100%;
-    min-height: 100px;             /* Altura mínima para centralizar bem */
+    min-height: 100px;            
     text-align: center;
 }
 
-/* Botão "anao" no canto esquerdo do header */
+
 .anao-header {
     position: absolute;
     left: 20px;
@@ -53,7 +53,7 @@ header {
     background-color: var(--detalhe);
 }
 
-/* Título do header (centralizado no meio) */
+
 header h1 {
     font-size: 2.8rem;
     font-weight: bold;
@@ -63,7 +63,6 @@ header h1 {
     z-index: 1;
 }
 
-/* GRID e CONTAINER */
 .grade {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -82,7 +81,7 @@ header h1 {
     margin: 3rem;
 }
 
-/* CARTÕES DE RECEITA */
+
 .conteudo-cartao {
     background-color: var(--caixa);
     padding: 40px;
@@ -121,7 +120,6 @@ header h1 {
     margin-left: 1rem;
 }
 
-/* IMAGENS: HORIZONTAIS, SEM DISTORÇÃO, ACIMA DO TEXTO */
 .ilustrativo,
 .Chiffon,
 .tira,
@@ -142,7 +140,7 @@ header h1 {
     background-color: #f0f0f0;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .ilustrativo,
     .Chiffon,
@@ -165,13 +163,12 @@ header h1 {
     }
 }
 
-/* LISTA */
 li {
     margin: 13px 0;
     color: var(--escrita2);
 }
 
-/* Botão dentro do cartão (não confundir com o do header) */
+
 .anao {
     border-radius: 50%;
     width: 40px;
