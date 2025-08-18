@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Adicionado para melhor controle de tamanho */
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,12 +21,18 @@ body {
 
 header {
     display: grid;
-
+    align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
     max-width: 100%;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .grade {
@@ -54,11 +60,13 @@ header {
     transition: transform 0.2s ease;
     box-shadow: 3px 3px 10px var(--escrita1);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .conteudo-cartao h1,
 .conteudo-cartao h4 {
     text-align: center;
+    color: var(--escrita2);
 }
 
 .conteudo-cartao:hover {
@@ -70,52 +78,75 @@ header {
     padding: 2rem;
     display: none;
     color: var(--escrita2);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     border-radius: 10px;
     overflow: hidden;
     font-size: larger;
     font-weight: bold;
-    max-width: 100%;
+    line-height: 1.6;
 }
 
 .resposta-cartao .preparo {
     text-align: left;
+    margin-left: 1rem;
 }
 
-/* AJUSTE PARA IMAGENS: FORÇAR EM CIMA DO TEXTO */
+/* AJUSTE DAS IMAGENS: HORIZONTAL, ALTA QUALIDADE, SEM DISTORÇÃO */
 .ilustrativo,
 .Chiffon,
 .tira,
 .creme,
 .nata {
-    /* Remove o float */
+    /* Remove float e posicionamento errado */
     float: none !important;
 
-    /* Faz a imagem ocupar linha inteira */
-    display: block;
-    margin: 0 auto 1.5rem auto; /* centraliza e coloca espaço abaixo */
-
-    /* Largura responsiva */
+    /* Tamanho responsivo com proporção horizontal */
     width: 100%;
     max-width: 920px;
-    height: auto; /* altura automática! */
+    height: auto;
+    min-height: 300px;
+    aspect-ratio: 16 / 9; /* força proporção horizontal ideal */
+
+    /* Centralizado */
+    display: block;
+    margin: 0 auto 1.5rem auto;
+
+    /* Borda suave e sombra */
     border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 
-    /* Garante que não tenha conteúdo ao lado */
-    clear: both;
-
-    /* Sombra opcional para destacar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Mantém qualidade da imagem */
+    image-rendering: -webkit-optimize-contrast;
+    object-fit: cover; /* preenche o espaço sem distorcer */
+    background-color: #f0f0f0; /* cor de fundo suave se houver corte */
 }
 
-/* Ajuste para listas e parágrafos */
-.resposta-cartao ul,
-.resposta-cartao p {
-    margin-top: 1rem;
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .ilustrativo,
+    .Chiffon,
+    .tira,
+    .creme,
+    .nata {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: auto;
+        height: auto;
+        min-height: 200px;
+    }
+
+    #container {
+        margin: 1.5rem;
+    }
+
+    .conteudo-cartao {
+        padding: 25px;
+    }
 }
 
 li {
     margin: 13px 0;
+    color: var(--escrita2);
 }
 
 .anao {
@@ -143,4 +174,6 @@ footer {
     text-align: center;
     padding: 10px;
     max-width: 100%;
+    font-size: 0.95rem;
+    z-index: 100;
 }
