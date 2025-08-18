@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
@@ -16,143 +15,143 @@
 body {
     font-family: Arial, sans-serif;
     background-color: var(--principal);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+
 }
 
-
 header {
+    display: grid;
+    align-items: center;
     color: var(--escrita2);
     padding: 30px;
     background-color: var(--header);
-    text-align: center;
+    max-width: 100%;
+
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+.div2 {
+    grid-column: span 4 / span 4;
+    grid-column-start: 4;
+    margin-left: 20px;
+
 }
 
 
 #container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 2rem;
     margin: 3rem;
-    flex: 1;
-}
-
-
-.cartao {
-    display: flex;
-    gap: 2rem;
-    background-color: var(--caixa);
-    border: 1px solid var(--detalhe);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-}
-
-.cartao:hover {
-    transform: scale(1.01);
-}
-
-.botao-expansao {
-    background-color: var(--escrita2);
-    color: var(--header);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    align-self: center;
-    margin: 1rem 0;
-    font-weight: bold;
-}
-
-.cartao-imagem {
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-}
-
-
-.conteudo-texto {
-    flex: 1;
-    padding: 2rem;
-    color: var(--escrita2);
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .conteudo-cartao {
-    cursor: pointer;
+    background-color: var(--caixa);
+    padding: 40px;
+    border: 1px solid var(--detalhe);
+    transition: transform 0.2;
+    box-shadow: 3px 3px 10px var(--escrita1);
+    border-radius: 10px;
+
 }
 
-.conteudo-cartao h1 {
+.conteudo-cartao h1,
+h4 {
     text-align: center;
-    margin-bottom: 1rem;
-    color: var(--escrita2);
 }
 
-.conteudo-cartao h4 {
-    text-align: center;
-    margin: 1rem 0;
+.conteudo-cartao:hover {
+    transform: scale(1.01);
 }
 
 .resposta-cartao {
+    background-color: var(--detalhe);
+    padding: 2rem;
     display: none;
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.resposta-cartao p {
     color: var(--escrita2);
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: larger;
     font-weight: bold;
+    max-width: 100%;
+
 }
 
+.resposta-cartao .preparo {
+    text-align: left;
 
-.resposta-cartao ul {
-    margin: 1rem 0;
-    line-height: 1.6;
+}
+@media (max-width: 1080px) { 
+.ilustrativo {
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 1700px;
+    width: 920px;
+
+}
+}
+.Chiffon {
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 1150px;
+    width: 900px;
+
+}
+    .tira{
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 1330px;
+    width: 880px;
+    }
+    .creme{
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 1150px;
+    width: 800px;
+    }
+li{
+    margin: 13px;
+}
+.nata {
+    border-radius: 10px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    float: left;
+    height: 1200px;
+    width: 800px;
+
 }
 
-.resposta-cartao li {
-    margin: 8px 0;
-    list-style-position: inside;
+.anao {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+
 }
 
 footer {
     background-color: var(--header);
+    position: fixed;
+    bottom: 0;
     color: var(--escrita2);
+    width: 100%;
     text-align: center;
     padding: 10px;
-    width: 100%;
-}
-
-
-
-@media (max-width: 768px) {
-    .cartao {
-        flex-direction: column;
-    }
-
-    .cartao-imagem {
-        width: 100%;
-        height: 300px;
-        border-radius: 10px 10px 0 0;
-    }
-
-    #container {
-        margin: 1.5rem;
-    }
-}
-
-@media (min-width: 769px) {
-    .cartao-imagem {
-        width: 35%;
-    }
+    max-width: 100%;
 }
