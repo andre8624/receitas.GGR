@@ -59,6 +59,17 @@ header h1 {
     transform: scale(1.01);
 }
 
+.botao-expansao {
+    background-color: var(--escrita2);
+    color: var(--header);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
 
 .cartao-imagem {
     width: 40%;

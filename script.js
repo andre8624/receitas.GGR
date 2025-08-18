@@ -6,7 +6,7 @@ function criaCartao(categoria, pergunta, resposta, imagemSrc, imagemAlt) {
     cartao.innerHTML = `
         <img src="${imagemSrc}" alt="${imagemAlt}" class="cartao-imagem">
         <div class="conteudo-texto">
-            <div class="conteudo-cartao" onclick="mostraResposta(this)">
+           <button class="botao-expansao" onclick="mostraResposta(this)">Mostrar Receita</button>
                 <h1>${categoria}</h1>
                 ${pergunta ? `<h4>${pergunta}</h4>` : ''}
                 <div class="resposta-cartao">
