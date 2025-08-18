@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle de tamanho */
 }
 
 :root {
@@ -16,7 +17,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--principal);
     align-items: center;
-
 }
 
 header {
@@ -26,44 +26,38 @@ header {
     padding: 30px;
     background-color: var(--header);
     max-width: 100%;
-
+    text-align: center;
 }
-
 
 .grade {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    
 }
 
 .div2 {
-    grid-column: span 4 / span 4;
+    grid-column: span 4;
     grid-column-start: 4;
     margin-left: 20px;
-
 }
-
 
 #container {
     display: grid;
     gap: 2rem;
     margin: 3rem;
-    
 }
 
 .conteudo-cartao {
     background-color: var(--caixa);
     padding: 40px;
     border: 1px solid var(--detalhe);
-    transition: transform 0.2;
+    transition: transform 0.2s ease;
     box-shadow: 3px 3px 10px var(--escrita1);
     border-radius: 10px;
-
 }
 
 .conteudo-cartao h1,
-h4 {
+.conteudo-cartao h4 {
     text-align: center;
 }
 
@@ -82,67 +76,62 @@ h4 {
     font-size: larger;
     font-weight: bold;
     max-width: 100%;
-
 }
 
 .resposta-cartao .preparo {
     text-align: left;
+}
 
-}
-@media (max-width: 1080px) { 
-.ilustrativo {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1700px;
-    width: 920px;
-
-}
-}
-.Chiffon {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1150px;
-    width: 900px;
-
-}
-    .tira{
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1330px;
-    width: 880px;
-    }
-    .creme{
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1150px;
-    width: 800px;
-    }
-li{
-    margin: 13px;
-}
+/* AJUSTE PARA IMAGENS: FORÇAR EM CIMA DO TEXTO */
+.ilustrativo,
+.Chiffon,
+.tira,
+.creme,
 .nata {
-    border-radius: 10px;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    height: 1200px;
-    width: 800px;
+    /* Remove o float */
+    float: none !important;
 
+    /* Faz a imagem ocupar linha inteira */
+    display: block;
+    margin: 0 auto 1.5rem auto; /* centraliza e coloca espaço abaixo */
+
+    /* Largura responsiva */
+    width: 100%;
+    max-width: 920px;
+    height: auto; /* altura automática! */
+    border-radius: 10px;
+
+    /* Garante que não tenha conteúdo ao lado */
+    clear: both;
+
+    /* Sombra opcional para destacar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para listas e parágrafos */
+.resposta-cartao ul,
+.resposta-cartao p {
+    margin-top: 1rem;
+}
+
+li {
+    margin: 13px 0;
 }
 
 .anao {
-    border-radius: 100px;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
+    background-color: var(--escrita2);
+    border: 2px solid var(--detalhe);
+    cursor: pointer;
+    display: block;
+    margin: 1.5rem auto 0;
+    transition: background 0.3s;
+}
 
+.anao:hover {
+    background-color: var(--detalhe);
 }
 
 footer {
